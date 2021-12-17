@@ -125,6 +125,8 @@ Take the tour
 .. _No problem: https://loguru.readthedocs.io/en/stable/api/logger.html#env
 .. _logging levels: https://loguru.readthedocs.io/en/stable/api/logger.html#levels
 
+.. _security concerns: https://lucumr.pocoo.org/2016/12/29/careful-with-str-format/
+
 .. |better_exceptions| replace:: ``better_exceptions``
 .. _better_exceptions: https://github.com/Qix-/better-exceptions
 
@@ -187,7 +189,7 @@ It is also `easily configurable`_ if you need rotating logger, if you want to re
 Modern string formatting using braces style
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-`Loguru` favors the much more elegant and powerful ``{}`` formatting over ``%``, logging functions are actually equivalent to ``str.format()``.
+`Loguru` favors the much more elegant and powerful ``{}`` formatting over ``%``, logging functions are actually equivalent to ``str.format()`` (be aware of `security concerns`_).
 
 ::
 
